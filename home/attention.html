@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Development Stages</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .header-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .highlight {
+            color: #00d4ff;
+        }
+        .steps {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 2rem;
+            margin-left: 5rem;
+        }
+        .step {
+            background-color: #3b82f6;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+        }
+        .step:nth-child(2) {
+            background-color: #ec4899;
+            margin-left: 2rem;
+        }
+        .step:nth-child(3) {
+            background-color: #8b5cf6;
+            margin-left: 4rem;
+        }
+        .step:nth-child(4) {
+            background-color: #2563eb;
+            margin-left: 6rem;
+        }
+        .step:nth-child(5) {
+            background-color: #10b981;
+            margin-left: 8rem;
+        }
+        .sub-text {
+            text-align: right;
+            margin-right: 5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <div className="header-text">
+                        We pay <span className="highlight">special attention</span> to <span className="highlight">each step</span>, 
+                        making sure to create an innovative and <span className="highlight">enjoyable rendered service</span>.
+                    </div>
+                    <div className="sub-text">
+                        Developments go through different stages......
+                    </div>
+                    <div className="steps">
+                        <div className="step">Planning</div>
+                        <div className="step">Analysis</div>
+                        <div className="step">Implementation</div>
+                        <div className="step">Testing</div>
+                        <div className="step">Deployment</div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Doha Tech</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #000428, #004e92);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="p-4">
+                    <div className="bg-white text-black rounded-lg p-4 flex items-center justify-center mb-4">
+                        <div className="flex items-center">
+                            <i className="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i className="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i className="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i className="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i className="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                        </div>
+                        <div className="ml-4 text-xl">
+                            4.9/5 - Based on 50+ client reviews
+                        </div>
+                    </div>
+                    <div className="bg-gray-800 text-center py-2 mb-4">
+                        Things Visitors Should Know About Doha Tech
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-black rounded-lg p-4 flex items-center justify-center">
+                            <img src="https://placehold.co/150x300" alt="Mobile app interface" className="rounded-lg" />
+                        </div>
+                        <div className="bg-white text-black rounded-lg p-4 flex items-center justify-center">
+                            <div className="text-center">
+                                <div className="text-4xl font-bold mb-2">1.</div>
+                                <div>We prioritize customer satisfaction and deliver tailored solutions.</div>
+                            </div>
+                        </div>
+                        <div className="bg-white text-black rounded-lg p-4 flex items-center justify-center">
+                            <div className="text-center">
+                                <div className="text-4xl font-bold mb-2">2.</div>
+                                <div>Our experts stay updated with the latest technology trends.</div>
+                            </div>
+                        </div>
+                        <div className="bg-black rounded-lg p-4 flex items-center justify-center">
+                            <img src="https://placehold.co/150x300" alt="Mobile app interface" className="rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
