@@ -1,0 +1,27 @@
+
+.my-8 img {
+    width: 200px;  /* Adjust size as needed */
+    ; /* Ensure the width and height are equal to create a perfect circle */
+     /* This makes the image round */
+     /* Ensures the image covers the area without distortion */
+}
+
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px); /* Starts 100px below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Slides up to its normal position */
+    }
+}
+
+/* Apply the animation to the body */
+body {
+    animation: slideUp 1s ease-out; /* 1s animation duration, with ease-out effect */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}

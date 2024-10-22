@@ -1,0 +1,232 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .ai .slideshow-container {
+    position: relative;
+    max-width: 100%; /* Set to your desired width */
+    margin: auto;
+    overflow: hidden;
+}
+
+.ai .mySlides {
+    display: none; /* Hide all slides by default */
+}
+
+.ai .fade {
+    animation: fade 1.5s ease-in-out; /* Animation duration and easing */
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .ai{
+            background-color: rgb(43, 92, 182);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="container mx-auto px-4 py-8 fade-in">
+                    <header className="flex justify-between items-center py-4">
+                        <img src="C:\Users\user\Desktop\doha tech\companies\doha logo.jpg" alt="Logo" className="w-12 h-12"/>
+                        <nav className="space-x-4">
+                            <a href="home.html" className="hover:underline">Home</a>
+                            <a href="index.html" className="hover:underline">About</a>
+                            <a href="services2.html" className="hover:underline">Portfolio</a>
+                            <a href="contact.html" className="hover:underline">Contact</a>
+                        </nav>
+                    </header>
+                    <section className="text-center py-16">
+                        <h1 className="text-4xl font-bold mb-4">We are DohaTech.</h1>
+                        <p className="text-xl mb-4">At DOHATECH, we are a platform where ideas thrive, providing innovative technology solutions that empower businesses and individuals. We specialize in web development, mobile application development, graphic design, cloud computing, and a wide range of other cutting-edge tech services designed to transform your vision into reality.
+
+Our team of experts leverages the latest technologies to create custom solutions that drive growth, enhance productivity, and bring ideas to life. Whether you need a sleek website, a powerful mobile app, visually stunning designs, or scalable cloud infrastructure, we have the expertise to meet your needs. At the core of everything we do is our commitment to innovation and delivering results that matter.
+
+Partner with us to take your business to new heights and stay ahead in the ever-evolving digital landscape.
+
+</p>
+
+<div className="flex flex-col items-center p-8">
+                    <h1 className="text-xl font-bold mb-4">ABOUT US</h1>
+                    <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center space-y-6 w-full max-w-4xl">
+                        <div className="flex flex-col md:flex-row items-center w-full space-y-6 md:space-y-0">
+                            <div className="bg-white text-black p-6 rounded-lg flex-1 border-4 border-white">
+                                <p className="font-bold">Doha Technology, a leading provider of innovative technology solutions. Our mission is to empower businesses and individuals through cutting-edge technology, exceptional service, and unparalleled expertise.</p>
+                            </div>
+                            <div className="flex-1 flex justify-center items-center">
+                                <div className="text-center">
+                                    <img src="companies/doha logo.jpg" alt="DohaTech Logo" className="h-48 w-48 border-4 border-white mx-auto"/>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:flex-row items-center w-full space-y-6 md:space-y-0">
+                            <div className="flex-1 flex justify-center items-center">
+                                <img src="pic/sammy.jpeg" alt="Portrait of Samuel Ihedioha" className="h-48 w-48 border-4 border-white"/>
+                            </div>
+                            <div className="bg-white text-black p-6 rounded-lg flex-1 border-4 border-white">
+                                <p className="font-bold">Founded by Samuel Ihedioha in 2023, Doha Technology has established itself as a trusted partner for organizations seeking to harness the power of technology to drive growth, improve efficiency, and enhance customer experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div className="flex justify-center space-x-2 mb-4">
+                            <i className="fas fa-star text-yellow-500"></i>
+                            <i className="fas fa-star text-yellow-500"></i>
+                            <i className="fas fa-star text-yellow-500"></i>
+                            <i className="fas fa-star text-yellow-500"></i>
+                            <i className="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <button className="bg-yellow-500 text-gray-900 px-4 py-2 rounded">Contact us now!!!</button>
+                    </section>
+                                    <section className="text-center mb-8">
+                        <h2 className="text-2xl font-bold mb-4">Team members </h2>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div>
+                                <img src="pic/emmanuel.jpeg" alt="Team Member 1" className="w-32 h-32 rounded-full mx-auto mb-2"/>
+                                <p>Emmanuel Chukwuemeka-web team lead</p>
+                            </div>
+                            <div>
+                                <img src="pic/PrinceWill Czar.jpeg" alt="Team Member 2" className="w-32 h-32 rounded-full mx-auto mb-2"/>
+                                <p>PrinceWill Czar- Graphic design team lead</p>
+                            </div>
+                            <div>
+                                <img src="pic/Ikejiaku chineye precious.jpeg" alt="Team Member 3" className="w-32 h-32 rounded-full mx-auto mb-2"/>
+                                <p>Ikejiaku chineye precious-Assistant Graphic team lead</p>
+                            </div>
+                            <div>
+                                <img src="pic/Joshua Nwobodo.jpeg" alt="Team Member 4" className="w-32 h-32 rounded-full mx-auto mb-2"/>
+                                <p>Team Member 4</p>
+                            </div>
+                            <div>
+                                <img src="pic/Abdulsalam Muhideen.jpeg" alt="Team Member 4" className="w-32 h-32 rounded-full mx-auto mb-2"/>
+                                <p>Team Member 4</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div className="ai">
+                    <section className="text-center mb-8">
+                        <h2 className="text-2xl font-bold mb-4">UI/UX</h2>
+                        <div className="flex justify-center space-x-4">
+                            <div className="flex justify-center space-x-4">
+        <img src="UI/1.jpg" alt="UI/UX Design 1" className="w-40h-auto max-h-40 rounded-lg object-cover" />
+        <img src="UI/2.jpg" alt="UI/UX Design 2" className="w-40 h-auto max-h-40 rounded-lg object-cover" />
+        <img src="UI/3.jpg" alt="UI/UX Design 3" className="w-40 h-auto max-h-40 rounded-lg object-cover" />
+        <img src="UI/4.jpg" alt="UI/UX Design 1" className="w-40h-auto max-h-40 rounded-lg object-cover" />
+        <img src="UI/5.jpg" alt="UI/UX Design 2" className="w-40 h-auto max-h-40 rounded-lg object-cover" />
+        <img src="UI/6.jpg" alt="UI/UX Design 3" className="w-40 h-auto max-h-40 rounded-lg object-cover" />
+    </div>
+                        </div>
+                        
+                    </section>
+                    
+                    <section className="text-center mb-8">
+                        <h2 className="text-2xl font-bold mb-4">Graphic Design</h2>
+                        <div className="flex justify-center space-x-4">
+                            <img src="companies/portfolios/4.jpeg" alt="Graphic Design 1" className="w-32 h-32 rounded-lg"/>
+                            <img src="companies/portfolios/2.jpeg" alt="Graphic Design 2" className="w-32 h-32 rounded-lg"/>
+                            <img src="C:\Users\user\Desktop\doha tech\companies\portfolios\4.jpeg" alt="Graphic Design 3" className="w-32 h-32 rounded-lg"/>
+                            <img src="companies/portfolios/5.jpeg" alt="Graphic Design 4" className="w-32 h-32 rounded-lg"/>
+                            <img src="companies/portfolios/2.jpeg" alt="Graphic Design 5" className="w-32 h-32 rounded-lg"/>
+                            <img src="companies/portfolios/6.jpeg" alt="Graphic Design 6" className="w-32 h-32 rounded-lg"/>
+                        </div>
+                    </section>
+                    <section className="text-center mb-8">
+                        <h2 className="text-2xl font-bold mb-4">Web Development</h2>
+                        <div className="flex justify-center space-x-4">
+                            <img src="companies/coffe black-1.jpg" alt="Web Development 1" className="w-40h-auto max-h-40 rounded-lg object-cover"/>
+                            <img src="companies/ggc (1).jpg" alt="Web Development 2" className="w-40h-auto max-h-40 rounded-lg object-cover"/>
+                            <img src="companies/coffe black-1.jpg" alt="Web Development 3" className="w-40h-auto max-h-40 rounded-lg object-cover"/>
+                        </div>
+                    </section>
+                    <section className="mb-8">
+                            <h2 className="text-2xl font-bold mb-4">Companies Worked For</h2>
+                            <div className="flex justify-center space-x-4">
+                                <img src="companies/1.jpeg" alt="Company 1 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/2.jpeg" alt="Company 2 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/3.jpeg" alt="Company 3 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/4.jpeg" alt="Company 4 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/5.jpeg" alt="Company 5 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/6.jpeg" alt="Company 6 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/7.jpeg" alt="Company 7 Logo" className="w-32 h-32 rounded"/>
+                                <img src="companies/8.jpeg" alt="Company 8 Logo" className="w-32 h-32 rounded"/>
+                            </div>
+                        </section></div>
+                    <section className="text-center mb-8">
+                        <h2 className="text-2xl font-bold mb-4">Send Us a Message</h2>
+                        <form className="space-y-4">
+                            <input type="text" placeholder="Your Name" className="w-full p-2 rounded bg-gray-800 text-white"/>
+                            <input type="email" placeholder="Your Email" className="w-full p-2 rounded bg-gray-800 text-white"/>
+                            <textarea placeholder="Your Message" className="w-full p-2 rounded bg-gray-800 text-white"></textarea>
+                            <button type="submit" className="bg-yellow-500 text-gray-900 px-4 py-2 rounded">Send</button>
+                        </form>
+                    </section>
+                    <footer className="text-center py-8">
+                        <p className="mb-4">© 2023 My Portfolio</p>
+                        <div className="flex justify-center space-x-4 mb-4">
+                            <a href="#" className="hover:underline">Privacy Policy</a>
+                            <a href="#" className="hover:underline">Terms of Service</a>
+                        </div>
+                        <div className="flex justify-center space-x-4">
+                            <a href="#" className="text-2xl"><i className="fab fa-facebook"></i></a>
+                            <a href="#" className="text-2xl"><i className="fab fa-twitter"></i></a>
+                            <a href="#" className="text-2xl"><i className="fab fa-instagram"></i></a>
+                            <a href="#" className="text-2xl"><i className="fab fa-linkedin"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>About Us</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+               
+        
